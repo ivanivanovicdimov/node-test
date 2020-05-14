@@ -3,27 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <title>About Us</title>
 
     <style>
 
-    body {
-        background-image: url("https://images.pexels.com/photos/1983036/pexels-photo-1983036.jpeg?cs=srgb&dl=assorted-black-cameras-1983036.jpg&fm=jpg");
-        background-size: cover;
-        background-attachment: fixed;
+.leftside, .rightside {
+    height: 50vh;
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+
+    .leftside, .rightside {
+        height: 100vh;
     }
+
+}
+
+.leftside {
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+.rightside {
+    background-image: url("images/assorted-cameras.jpg");
+    background-size: cover;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
 
     </style>
 </head>
 <body>
-    <img src=""
-    <h1>About Us</h1>
-        <p>We are local film and photography company that focuses on shooting vidoe and stills bot on film.
-            We also have a lab to develop and process the film and are able to export digitally. We have 
-            a small team around 11 people and really focus on our customers experiance especiialy to those who are working 
-            with film for the first time. We can aid your shoot and help you through the process or completely do the shoot ourselves if you want it professioanly 
-            done or if you just want to learn from us. Film can be expensive so we work with you to bring the prices as low as possible. Please call or email us
-            to get in contact us for you future or past projects, but if you just have a question we would love to help you and give you the knowledge need to shoot and process
-            film successfully. Click out portfolio tab to see our past work. </p>
+   
+<div class="row no-gutters">
+
+    <div class="col-md-6 no-gutters">
+
+        <div class="leftside">
+            
+            <div class="centered">
+            <h2 style="font-weight: bolder;">About Us</h2> 
+            <br>
+            <p>We are local film and photography company that focuses on shooting vidoe and stills bot on film.
+                We also have a lab to develop and process the film and are able to export digitally. We have 
+                a small team around 11 people and really focus on our customers experiance especiialy to those who are working 
+                with film for the first time. We can aid your shoot and help you through the process or completely do the shoot ourselves if you want it professioanly 
+                done or if you just want to learn from us. Film can be expensive so we work with you to bring the prices as low as possible. Please call or email us
+                to get in contact us for you future or past projects, but if you just have a question we would love to help you and give you the knowledge need to shoot and process
+                film successfully. Click out portfolio tab to see our past work.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-6 no-gutters">
+
+        <div class="rightside">
+
+        </div>
+
+    </div>
+
+</div>
+   
 </body>
 </html>
