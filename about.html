@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+   
     <title>About Us</title>
 
     <style>
@@ -42,11 +42,125 @@
     font-weight: 400;
 }
 
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+::selection {
+  background: #000;
+  color: #aaf;
+}
+.alternate ::selection {
+  background: #c00;
+  color: #000;
+}
+
+ul, li, h1, h2, h3, h4, h5, h6, p, a, .logo {
+  font-family: 'Times New Roman', Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  width: 800px;
+  position: relative;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: #000;
+  transition: 0.7s all;
+  z-index: 100;
+}
+
+header.alt-header {
+  background: #fff;
+}
+
+.alt-header a {
+  color: #000;
+}
+
+body.header-fixed header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  overflow: hidden;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 25px;
+  transition: 0.3s all;
+}
+
+nav a:hover {
+  background:rgb(85, 1, 85);
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo {
+  float: left;
+  color: #fff;
+  font-size: 25px;
+  line-height: 70px;
+  transition: 0.7s all;
+}
+
+.alt-header .logo {
+  color: #000;
+}
+
+body.header-fixed .logo {
+  font-size: 30px;
+}
     </style>
 </head>
 <body>
+    <header id="topnav">
+        <div class="inner">
+            <div class="logo">Tacoma Film Society</div>
+          <nav role='navigation'>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>  
+        </div>
+      </header>
+      
+      
    
-<div class="row no-gutters">
+<div class="row no-gutters" style="padding-top: 10px;">
 
     <div class="col-md-6 no-gutters">
 
@@ -77,5 +191,6 @@
 
 </div>
    
+
 </body>
 </html>
